@@ -1,14 +1,18 @@
 import java.util.Arrays;
 
-class ArraySwapper {
+class Main {
   
   // This method assumes you only have 2 items in your array
   public void arraySwap(int []inputArray) {
     
+    
     // Swap the two items in "inputArray" and return the output
     // put your code here
-    int temp;
-        
+    
+    int temp; // you can use this as a temporary variable
+    temp = inputArray[0];
+    
+    
   }
   
   // This method swaps any 2 items in any array
@@ -20,11 +24,9 @@ class ArraySwapper {
         
   }
 
-  
-  
   public static void main(String[] args) {
 
-    ArraySwapper testSwapper = new ArraySwapper();
+    Main testSwapper = new Main();
     
     // ***** Test the first swap method *******
     System.out.println("*** Trying first method ***");
@@ -40,7 +42,7 @@ class ArraySwapper {
     if (java.util.Arrays.equals(exampleInput, exampleOutput)) {
       System.out.println("arraySwap succeeded");
     } else {
-      System.out.println("arraySwap failed!");
+      System.out.println("arraySwap FAILED!");
     }
     
     // ***** Test the second swap method *******
@@ -57,7 +59,9 @@ class ArraySwapper {
     if (java.util.Arrays.equals(exampleInput, exampleOutput)) {
       System.out.println("arraySwapAny2 succeeded");
     } else {
-      System.out.println("arraySwapAny2 failed!");
+      System.out.println("arraySwapAny2 FAILED!");
     }
   }
 }
+
+
