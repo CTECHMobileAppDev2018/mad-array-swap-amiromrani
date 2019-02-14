@@ -11,10 +11,8 @@ class Main {
     
     int temp; // you can use this as a temporary variable
     temp = inputArray[0];
+    inputArray[0] = inputArray[1];
     inputArray[1] = temp;
-    inputArray[1] = inputArray[1];
-    temp = inputArray[0];
-    
   }
   
   // This method swaps any 2 items in any array
@@ -22,9 +20,15 @@ class Main {
     
     // Swap the two items in "inputArray" and return the output
     // Remember to make sure that loc1 and loc2 are valid positions in the array!
-    int temp;
-        
+    
+      int temp; // you can use this as a temporary variable
+    temp = inputArray[loc1];
+    inputArray[loc1] = inputArray[loc2];
+    inputArray[loc2] = temp;
   }
+    
+        
+  
 
   public static void main(String[] args) {
 
@@ -46,7 +50,7 @@ class Main {
     } else {
       System.out.println("arraySwap FAILED!");
     }
-    
+   
     // ***** Test the second swap method *******
     System.out.println("\n*** Trying second method ***");
     exampleInput = new int[]{1, 22, 333, 4444};
