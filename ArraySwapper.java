@@ -11,7 +11,9 @@ class Main {
     
     int temp; // you can use this as a temporary variable
     temp = inputArray[0];
-    
+    inputArray[1] = temp;
+    inputArray[1] = inputArray[1];
+    temp = inputArray[0];
     
   }
   
